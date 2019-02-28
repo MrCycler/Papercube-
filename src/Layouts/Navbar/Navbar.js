@@ -49,23 +49,15 @@ class Navbar extends Component{
 
     render() {
 
-        let logoInnovadex = this.state.logos.map((logo,index) => {
-            if (logo.id == 67){
-                return(
-                    <Link to="/">
-                    <img class="navbar__image" 
-                    src={logo.acf.imagen.sizes.medium}/>
-                    </Link>
-                )
-            }
-        })
-
         return (
             <div id="navbar" className="navbar-area">
-                {logoInnovadex}
+                 <Link to="/">
+                    <img class="navbar__image" 
+                    src="https://papercubehome.files.wordpress.com/2019/02/modo-principal.png"/>
+                    </Link>
                 <Link to="/" className="navbar__item">INICIO</Link>
-                <Link to="/noticias" className="navbar__item">NOTICIAS</Link>
-                <Link to="/academy" className="navbar__item">INNOVADEX ACADEMY </Link>
+                <Link to="/noticias" className="navbar__item">PROYECTOS</Link>
+                <Link to="/academy" className="navbar__item">SERVICIOS</Link>
                 <Link to="/intsystem" className="navbar__item">REGISTRATE </Link>
             </div>
         )

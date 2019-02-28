@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
 import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
-import { Row,Col,Conatiner } from 'reactstrap';
-import './Navbarmin.css'
+import { Row,Col} from 'reactstrap';
+import '../Navbar/Navbar.css'
 
 //TODO: Hacer que en mobile se pliegue el menu
 
@@ -51,20 +51,14 @@ class Navbarmin extends Component{
     }
 
     render() {
-      let logoInnovadex = this.state.logos.map((logo,index) => {
-            if (logo.id == 67){
-                return(
-                    <img class="navbar__image" src={logo.acf.imagen.sizes.medium}/>
-                )
-            }
-        })
+     
         return (
             <div id="navbar" className="navbar-area">
             <Row>
               
               <Col  xs="7">
-            <Navbar color="faded" dark>
-          <NavbarToggler onClick={this.toggleNavbar} className="nani"/>
+            <Navbar color="black" dark>
+          <NavbarToggler onClick={this.toggleNavbar} className="navbar_compresed"/>
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
               <NavItem>
@@ -88,7 +82,10 @@ class Navbarmin extends Component{
           </Col>
           <Col xs="3">
           <p></p>
-              {logoInnovadex}
+          <Link to="/">
+                    <img class="navbar__image" 
+                    src="https://papercubehome.files.wordpress.com/2019/02/modo-principal.png"/>
+                    </Link>
               <p></p>
               </Col>
           </Row>           
