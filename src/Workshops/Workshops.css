@@ -1,0 +1,33 @@
+.letrastaller{
+  color: white;
+  font-size: 18px;
+}
+
+.Flexdiv{
+  display: flex;
+  justify-content: center;
+  justify-content: space-around;
+}
+
+.letraschip{
+  font-size: 9px;
+}
+
+.divi{
+  height: 155px;
+  filter: alpha(opacity=100);
+}
+
+.deve{
+  height: 450px;
+  filter: alpha(opacity=100);
+}
+
+.containerx{
+  background-image: url(../assets/negocios.jpeg);
+  background-size:100% 100%;
+}
+
+.chip{
+  cursor:pointer; cursor: hand;
+}

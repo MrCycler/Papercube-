@@ -1,0 +1,94 @@
+.navbar-area {
+    overflow: hidden;
+    background-color: #001845;
+    color: #FFFFFF;
+    z-index: 1000;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+}
+
+.navbar--sticky{
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar__item{
+    display: block;
+    text-align: center;
+    margin: 8px;
+    font-size:1em;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbar__icon{
+    display: block;
+    text-align: center;
+    margin: 8px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+.navbar__item:visited{
+    color: #FFFFFF;
+}
+
+.navbar__item:active{
+    color: #FFFFFF;
+}
+
+.navbar__item:hover{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.navbar__image{
+    height: 2.5rem;
+    width: auto;
+    align-self: flex-start;
+    padding-right: 1rem;
+}
+
+@media only screen and (max-width: 992px){
+    .navbar-area{
+        overflow: hidden;
+    }
+
+    .navbar__item{
+        text-align: left;
+    }
+
+    .navbar-area.navbar--responsive{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .navbar-area.navbar--responsive .navbar__item{
+        display: block;
+        text-align: center;
+        margin: 8px;
+        font-size: 1rem;
+        font-weight: bold;
+        text-decoration: none;
+        font-family: Verdana;
+        color: #FFFFFF;
+    }
+}
+
+@media only screen and (min-width: 992px){
+
+    .navbar-area{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        flex-direction: row;
+    }
+
+    .navbar__icon{
+        display: none;
+    }
+}

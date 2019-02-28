@@ -1,0 +1,30 @@
+.divnoticia{
+    background-color: white;
+    width: 280px;
+   height: 190px;
+   text-align: center;
+   border: 10px solid #003D71;
+  
+   
+  }
+  .titulonoticia{
+    background-color: white;
+    text-align: left;
+    text-decoration: underline;
+   
+  }
+  .textonoticia{
+    background-color: white;
+    text-align: justify;
+   
+  }
+  .divnoticiaprincipal{
+    background-color: white;
+  }
+  .menu{
+    display: flex;
+    justify-content: center;
+    
+    
+  }
+  

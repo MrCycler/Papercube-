@@ -1,0 +1,36 @@
+.newimagesize{
+  height: 200px;
+  width: 200px;
+}
+
+.cardnew{
+    background-color: white;
+    border: 1px solid #003D71;
+    margin-bottom: 30px;
+    margin-left: 4px;
+    margin-right: 4px;
+   
+}
+
+.letraspost{
+  font-size: 8px;
+}
+
+.cardarea{
+  height: 210px;
+  text-align: left;
+}
+
+.letraslink{
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.letrastitulo{
+  font-size: 14px;
+  font-weight: bold;
+
+}
+.letrastexto{
+  font-size: 14px;
+}
