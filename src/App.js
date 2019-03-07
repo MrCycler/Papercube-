@@ -7,7 +7,7 @@ import Footers from './Layouts/Footers/Footers';
 import Workshops from './Workshops/Workshops';
 import Routesystem from './Systeminterface/Routesystem';
 import Navbarmin from './Layouts/Navbar-min/Navbarmin'
-import Social from './Layouts/Social/Social'
+
 
 import './App.css';
 
@@ -50,7 +50,7 @@ class App extends Component {
            
           <Route component={Home}/> 
             
-          <Social/>  
+        
           <Footers />
         </div>
       </Router>

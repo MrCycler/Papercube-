@@ -1,89 +1,95 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import MaterialIcon from 'material-icons-react';
+import FontAwesome from 'react-fontawesome';
 import './Footers.css';
 
 class Footers extends Component {
   constructor(){
     super();
     this.state = {
-        logos:[],
+        numerotamaño:[],
+        numerotamaño2:[],
     }}
 
     componentDidMount() {
-      
-      let dataUrl = "http://innovadex.adexperu.org.pe/back/wp-json/wp/v2/logos_footer?_embed"
-      fetch(dataUrl)
-      .then(res => res.json())
-      .then(res => {
-          this.setState({
-              logos: res
-          })
-      })
-  }
+        window.addEventListener("resize", this.resize.bind(this));
+        this.resize();
+    }
 
+    resize() {
+      if(window.innerWidth<1200){
+        this.setState({numerotamaño: 6,numerotamaño2:12});
+      }
+      else
+      {
+          this.setState({numerotamaño: 4,numerotamaño2:4});
+      }
+    }
     render() {
 
-      let urls = this.state.logos.map((logo,index) => {
-        return logo.acf.imagen_logo.url;
-     })
-
       return (
-
-        <div className="footer">
-        <Container>
+        <div> 
+        <div  className="footersup">
+        <Container className="footercontainer">
           <Row >
-            
-            <Col xs="6">
-            <p></p>
-            <h6>ADEX – ASOCIACIÓN DE EXPORTADORES:</h6>
-             <p> <MaterialIcon icon="room" color='white' /> Sede central: Av. Javier Prado Este 2875 San Borja, Lima - Perú</p>
-            <p> <MaterialIcon icon="local_phone" color='white'/> Contacto: 618-3333 Anexo: 5303</p>
-            <p><MaterialIcon icon="mail" color='white'/> Correo electrónico: <a href="mailto:alinvest5@adexperu.org.pe" className="aaa">alinvest5@adexperu.org.pe</a></p>
-          
+
+            <Col xs={this.state.numerotamaño}>
+            <p className="footertitletext">PAPERCUBE CONSULTING S.A.C</p>
+            <img className="footermark" src="https://papercubehome.files.wordpress.com/2019/02/modo-alternativo.png" width="200px"></img>
            </Col>
 
+           <Col xs={this.state.numerotamaño}>
+            <p className="footertitletext">CONTACTE CON NOSOTROS:</p>
+            <p className="verticalalign"> <MaterialIcon icon="room" color='white'/>&nbsp; Av. Universitaria 1801, San Miguel, Lima - Perú</p>
+            <p className="verticalalign"> <MaterialIcon icon="local_phone" color='white'/>&nbsp; Telefóno: &nbsp; <a href="tel:991471604">991471604</a></p>
+            <p className="verticalalign"><MaterialIcon icon="mail" color='white'/>  &nbsp; Correo electrónico:&nbsp;  <a href="mailto:soluciones@papercube.pe"> soluciones@papercube.pe</a></p>
+           </Col>
+
+           <Col xs={this.state.numerotamaño2}>
+            <p className="footertitletext">SIGANOS EN NUESTRAS REDES:</p>
+              <Row >
+                <Col xs="2">
+                <a href="https://www.facebook.com/papercube/" className="footercenter">
+                <FontAwesome className="materialicon" size="3x" name="facebook" /></a>
+                </Col>
+                <Col xs="2">
+                <a href="https://pe.linkedin.com/" className="footercenter">
+                <FontAwesome  className="materialicon" size="3x" name="linkedin" /></a>
+                </Col>
+                <Col xs="2">
+                <a href="https://medium.com/" className="footercenter">
+                <FontAwesome className="materialicon" size="3x" name="medium" /></a>
+                </Col>
+                <Col xs="2">
+                <a href="https://twitter.com/?lang=es" className="footercenter">
+                <FontAwesome className="materialicon" size="3x" name="twitter" /></a>
+                </Col>
+                <Col xs="2">
+                <a href="https://www.instagram.com/_jm.mj_/" className="footercenter">
+                <FontAwesome  className="materialicon" size="3x" name="instagram" /></a>
+                </Col>
+                <Col xs="2">
+                <a href="tel:991471604" className="footercenter">
+                <FontAwesome  className="materialicon" size="3x" name="whatsapp" /></a>
+                </Col>
+              </Row>
+            </Col>
+
+            </Row>
            
+        </Container>
+        </div>
 
-            <Col xs="6">
-            <p></p>
-            <h6>CON EL APOYO DE:</h6>
-            
-
+        <div className="footerinf">
+          <Container >
             <Row>
-           <Col>
-            <div className="footerdivs">
-            <p></p>
-            <img className="marcacss" src={urls[0]} alt="" width="120%" height="100%"/>
-            </div>
-           </Col>
-            <Col>
-            <div className="footerdivs">
-            <p></p>
-            <img className="marcacss" src={urls[1]} alt="" width="120%" height="100%"/>
-            </div>
-            </Col>
-            <Col>
-            <div className="footerdivs">
-            <p></p>
-            <img className="marcacss" src={urls[2]} alt="" width="120%" height="95%" />
-             </div>
-             </Col>
-            </Row>
-
-            
-          
-            </Col>
-            </Row>
-
-
-            <Row>
-            
               <Col>
-              <p className="centertext">Copyright © 2019 Papercube Consulting S.A.C</p>
+                 <p className="footertextcenter">Copyright © 2019 Papercube Consulting S.A.C</p>
               </Col>
             </Row>
-        </Container>
+          </Container>
+        </div>
         </div>
 
       );
