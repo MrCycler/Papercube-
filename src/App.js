@@ -38,7 +38,7 @@ class App extends Component {
  
   render() {
 
-    
+    //TODO: Ruta oor defecto a un componente 404 error
     return (
       <Router>
         <div>
@@ -46,7 +46,10 @@ class App extends Component {
           <Route exact path="/" component={Home}/>
           <Route path="/noticias" component={News}/>   
           <Route path="/academy" component={Workshops}/>   
-          <Route path="/intsystem" component={Routesystem}/>   
+          <Route path="/intsystem" component={Routesystem}/>  
+           
+          <Route component={Home}/> 
+            
           <Social/>  
           <Footers />
         </div>

@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
-import MaterialIcon, {colorPalette} from 'material-icons-react';
+import MaterialIcon from 'material-icons-react';
 import './Footers.css';
 
 class Footers extends Component {
@@ -30,9 +30,9 @@ class Footers extends Component {
 
       return (
 
-        <div className="letras">
+        <div className="footer">
         <Container>
-            <Row >
+          <Row >
             
             <Col xs="6">
             <p></p>
@@ -76,24 +76,11 @@ class Footers extends Component {
             </Col>
             </Row>
 
-            <Row>
-              <Col>
-              <hr className="line"/>
-              <p></p>
-              <p></p>
-              <p className="centertext">La presente publicación ha sido elaborada con la asistencia de la Unión Europea. El contenido de la misma es responsabilidad exclusiva de ADEX y en ningún caso debe considerarse que refleja los puntos de vista de la Unión Europea</p>
-              </Col>
-
-            </Row>
 
             <Row>
+            
               <Col>
-              <p className="centertext">Todos los Derechos Reservados 2018</p>
-              </Col>
-              <Col>
-              </Col>
-              <Col>
-              <p className="centertext">Hecho por: Papercube Consulting S.A.C</p>
+              <p className="centertext">Copyright © 2019 Papercube Consulting S.A.C</p>
               </Col>
             </Row>
         </Container>

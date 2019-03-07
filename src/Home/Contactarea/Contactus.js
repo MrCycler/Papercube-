@@ -3,7 +3,7 @@ import { Button, Form, FormGroup, Label, Input} from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 import './Contactus.css'
 
-// TODO: Manejar post para enviar la data al backend
+
 
 class Contactus extends Component {
 

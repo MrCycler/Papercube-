@@ -64,9 +64,15 @@ class Navbarmin extends Component{
           <NavbarToggler onClick={this.toggleNavbar} className="navbar_compresed"/>
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
+            
               <NavItem>
                 <NavLink href=""><Link to="/" className="navbar__item">INICIO</Link></NavLink>
               </NavItem>
+
+              <NavItem>
+                <NavLink href=""><Link to="/team" className="navbar__item">EQUIPO</Link></NavLink>
+              </NavItem>
+
               <NavItem>
                 <NavLink href=""><Link to="/noticias" className="navbar__item">NOTICIAS</Link></NavLink>
               </NavItem>

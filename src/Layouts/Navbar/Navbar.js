@@ -56,9 +56,11 @@ class Navbar extends Component{
                     src="https://papercubehome.files.wordpress.com/2019/02/modo-principal.png"/>
                     </Link>
                 <Link to="/" className="navbar__item">INICIO</Link>
-                <Link to="/noticias" className="navbar__item">PROYECTOS</Link>
-                <Link to="/academy" className="navbar__item">SERVICIOS</Link>
-                <Link to="/intsystem" className="navbar__item">REGISTRATE </Link>
+                <Link to="/team" className="navbar__item">EQUIPO</Link>
+                <Link to="/projects" className="navbar__item">PROYECTOS</Link>
+                <Link to="/services" className="navbar__item">SERVICIOS</Link>
+                <Link to="/community" className="navbar__item">COMUNIDAD</Link>
+                <Link to="/intsystem" className="navbar__item">CONTACTO</Link>
             </div>
         )
     }
