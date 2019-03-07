@@ -3,11 +3,8 @@ import Alliance from './Alliance/Alliance';
 import Capacitation from './Capacitation/Capacitation';
 import Contactus from './Contactarea/Contactus';
 import{Col,Row,Container} from 'reactstrap';
-
 import Newslider_prob from './Newslider/Newslider_prob';
 import Sliders from './Sliders/Sliders';
-import VideoPlayer from './VideoPlayer/VideoPlayer'
-
 import './Home.css'
 
 class Home extends Component{
@@ -52,6 +49,9 @@ class Home extends Component{
 
         return (
            <Container>
+               <video autoplay muted loop className="myVideo">
+               
+               </video>
                 <Sliders />
                 <Newslider_prob/>
                

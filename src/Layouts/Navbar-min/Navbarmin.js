@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
-import { Collapse, Navbar, NavbarToggler, NavbarBrand, Nav, NavItem, NavLink } from 'reactstrap';
+import { Collapse, Navbar, NavbarToggler, Nav, NavItem, NavLink } from 'reactstrap';
 import { Row,Col} from 'reactstrap';
 import '../Navbar/Navbar.css'
 
@@ -9,13 +9,16 @@ import '../Navbar/Navbar.css'
 class Navbarmin extends Component{
 
     constructor(props) {
-        super(props);
+        
+      super(props);
     
         this.toggleNavbar = this.toggleNavbar.bind(this);
-        this.state = {
-          collapsed: true,
-          logos:[],
-        };
+
+          this.state = {
+            collapsed: true,
+            logos:[],
+          };
+
       }
 
       toggleNavbar() {
@@ -84,7 +87,7 @@ class Navbarmin extends Component{
           <p></p>
           <Link to="/">
                     <img class="navbar__image" 
-                    src="https://papercubehome.files.wordpress.com/2019/02/modo-principal.png"/>
+                    src="https://papercubehome.files.wordpress.com/2019/02/modo-alternativo.png"/>
                     </Link>
               <p></p>
               </Col>
