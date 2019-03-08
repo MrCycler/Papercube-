@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import Alliance from './Alliance/Alliance';
+
 import Capacitation from './Capacitation/Capacitation';
 import Contactus from './Contactarea/Contactus';
 import{Col,Row,Container} from 'reactstrap';
@@ -68,7 +68,7 @@ class Home extends Component{
                         <Contactus />
                     </Col>   
                 </Row>
-                <Alliance />
+              
            
             </Container>
         )

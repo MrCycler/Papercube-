@@ -20,6 +20,9 @@ class Footers extends Component {
     resize() {
       if(window.innerWidth<1200){
         this.setState({numerotamaño: 6,numerotamaño2:12});
+        if(window.innerWidth<768){
+          this.setState({numerotamaño: 12,numerotamaño2:12});
+        }
       }
       else
       {
