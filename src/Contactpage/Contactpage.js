@@ -1,8 +1,9 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input} from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
-import {Link} from 'react-router-dom';
+
 import './Contactpage.css'
+
 
 class Contactpage extends Component {
     constructor(){
@@ -43,7 +44,7 @@ class Contactpage extends Component {
           <Row className="contacttext"> 
             
             <Col xs="12">
-              <p>Papercube le ofrece a su empresa o emprendimiento, analizar sus problemas y brindarle una solución factible que incorpore tecnologías de vanguardia en hardware, software y análisis de datos. Contacta con nosotros y conozca la gama de soluciones que tenemos para ofrecerle.</p>
+              <p>Papercube le ofrece a su empresa o emprendimiento, analizar sus problemas y brindarle una solución factible que incorpore tecnologías de vanguardia en hardware, software y análisis de datos. Contacte con nosotros y conozca la gama de soluciones que tenemos para ofrecerle.</p>
             </Col>
             
             <Col xs={this.state.numerotamaño}>
@@ -80,13 +81,23 @@ class Contactpage extends Component {
                 <Input className="contacttextarea" type="textarea" name="mensaje" id="Contactreq" placeholder="" />
               </FormGroup>
               
-              <Button color="primary" className="contactbutton">Entrar al sistema</Button>
+              <Button color="primary" className="contactbutton">Enviar</Button>
               <p></p>
 
               </Form>
 
             </Col>
-        
+            
+            <Col xs={this.state.numerotamaño}>
+
+            <iframe
+                width="500"
+                height="500"
+                frameborder="0"
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBGRxueWqb4u88-O7Z7aDFvxQ0wLe30N-4&q=PUCP" allowfullscreen>
+              </iframe>
+             
+            </Col>
           </Row>
       
 

@@ -54,18 +54,7 @@ class Home extends Component{
                 <Newslider_prob/>
                
                 <Capacitation /> 
-                <Row>
-                    <Col xs={this.state.numerotamaño}>
-                        <p></p>
-                        <p></p>
-                        <iframe width="100%" height="350px"
-                        src={videolink[0]}>
-                        </iframe>
-                    </Col>   
-                    <Col xs={this.state.numerotamaño}>
-                        <Contactus />
-                    </Col>   
-                </Row>
+               
               
            
             </div>
