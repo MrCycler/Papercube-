@@ -1,0 +1,59 @@
+
+.contactarea{   
+    background-color:white;
+    }
+.contactsupimage{
+  margin-top: 30px;
+  width: 100%;
+}
+.contacttitletext{
+  color: #004D8F;
+  font-size: 30px;
+  font-weight: bold;
+  margin-top:10px;
+}
+
+.contacttext{
+  color: black;
+  font-size: 15px;
+  text-align: justify;
+
+}
+
+.contactbutton{
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+
+.contacttextarea
+{
+  height: 80px;
+}
+
+.contactcamps
+{
+  height: 30px;
+}
+
+
+
+.mensajecss{
+    height: 40px;
+}
+.imagearea{
+  
+    height: 300px;
+
+  }
+
+
+  .CheckText{
+    color: #0069D9;
+    font-weight:  bold;
+  }
+
+  .TooltipText{
+    text-decoration: underline;
+  }
+  

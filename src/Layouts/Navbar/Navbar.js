@@ -54,7 +54,7 @@ class Navbar extends Component{
                 <Link to="/projects" className="navbar__item">PROYECTOS</Link>
                 <Link to="/services" className="navbar__item">SERVICIOS</Link>
                 <Link to="/community" className="navbar__item">COMUNIDAD</Link>
-                <Link to="/intsystem" className="navbar__item">CONTACTO</Link>
+                <Link to="/contact" className="navbar__item">CONTACTO</Link>
             </div>
         )
     }

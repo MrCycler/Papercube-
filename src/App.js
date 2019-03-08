@@ -5,8 +5,8 @@ import News from './News/News';
 import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 import Footers from './Layouts/Footers/Footers';
 import Workshops from './Workshops/Workshops';
-import Routesystem from './Systeminterface/Routesystem';
-import Navbarmin from './Layouts/Navbar-min/Navbarmin'
+import Contactpage from './Contactpage/Contactpage';
+import Navbarmin from './Layouts/Navbar-min/Navbarmin';
 import Page404 from './Page404/Page404';
 
 import './App.css';
@@ -44,11 +44,11 @@ class App extends Component {
         <div>
           {this.state.mostrate}
           <Switch>
-          <Route exact path="/" component={Home}/>
-          <Route path="/noticias" component={News}/>   
-          <Route  path="/academy" component={Workshops}/>   
-          <Route  path="/intsystem" component={Routesystem}/>  
-          <Route  component={Page404}/>  
+            <Route exact path="/" component={Home}/>
+            <Route path="/noticias" component={News}/>   
+            <Route  path="/academy" component={Workshops}/>   
+            <Route  path="/contact" component={Contactpage}/>  
+            <Route  component={Page404}/>  
           </Switch>
           <Footers />
         </div>
