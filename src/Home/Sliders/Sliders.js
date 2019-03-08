@@ -97,7 +97,7 @@ class Sliders extends Component {
               }`
           }
         </style>
-        <Row><p></p></Row>
+        
         <Carousel
           activeIndex={activeIndex}
           next={this.next}

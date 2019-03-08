@@ -48,10 +48,8 @@ class Home extends Component{
          })
 
         return (
-           <Container>
-               <video autoplay muted loop className="myVideo">
+           <div>
                
-               </video>
                 <Sliders />
                 <Newslider_prob/>
                
@@ -70,7 +68,7 @@ class Home extends Component{
                 </Row>
               
            
-            </Container>
+            </div>
         )
     }
 }

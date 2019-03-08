@@ -4,6 +4,7 @@ import { faBars } from '@fortawesome/free-solid-svg-icons'
 import {Link} from 'react-router-dom';
 import './Navbar.css';
 
+
 class Navbar extends Component{
     constructor(){
         super();
@@ -14,14 +15,7 @@ class Navbar extends Component{
 
     componentDidMount(){
         window.addEventListener('scroll',this.handleScroll);
-        let dataUrl = "http://innovadex.adexperu.org.pe/back/wp-json/wp/v2/logos?_embed"
-        fetch(dataUrl)
-        .then(res => res.json())
-        .then(res => {
-            this.setState({
-                logos: res
-            })
-        })
+
     }
 
     componentWillUnmount(){
