@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Container, Row, Col } from 'reactstrap';
 import './Page404.css';
-
+//BACKEND: 404 IMAGE SOURCE 
 class Page404 extends Component{
     constructor(){
         super();
@@ -48,7 +48,8 @@ class Page404 extends Component{
                 <Col xs={this.state.numerotamaño2}></Col>
                 <Col xs={this.state.numerotamaño} >
              
-                <img className="page404image"src="https://papercubehome.files.wordpress.com/2019/03/modo-color-a.jpg" >
+                <img className="page404image"
+                src="https://papercubehome.files.wordpress.com/2019/03/modo-color-a.jpg" >
                 </img>
                 <p className="page404text">HTTP 404 Not Found Error</p>
                 <p className="page404text">Lo sentimos, la página que quiere consultar no es válida</p>
@@ -57,7 +58,7 @@ class Page404 extends Component{
                 <Col xs={this.state.numerotamaño2}></Col>
             </Row>
                         
-            
+   
             </Container>
             
         );

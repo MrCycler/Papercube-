@@ -8,8 +8,9 @@ import Workshops from './Workshops/Workshops';
 import Contactpage from './Contactpage/Contactpage';
 import Navbarmin from './Layouts/Navbar-min/Navbarmin';
 import Page404 from './Page404/Page404';
-
+import Teampage from './Teampage/Teampage';
 import './App.css';
+
 
 
 
@@ -45,8 +46,9 @@ class App extends Component {
           {this.state.mostrate}
           <Switch>
             <Route exact path="/" component={Home}/>
-            <Route path="/noticias" component={News}/>   
-            <Route  path="/academy" component={Workshops}/>   
+            <Route path="/team" component={Teampage}/>   
+            <Route path="/projecss" component={News}/>   
+            <Route  path="/communis" component={Workshops}/>   
             <Route  path="/contact" component={Contactpage}/>  
             <Route  component={Page404}/>  
           </Switch>

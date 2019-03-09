@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 import Capacitation from './Capacitation/Capacitation';
-import Contactus from './Contactarea/Contactus';
+
 import{Col,Row,Container} from 'reactstrap';
 import Newslider_prob from './Newslider/Newslider_prob';
 import Sliders from './Sliders/Sliders';
@@ -52,10 +52,7 @@ class Home extends Component{
                
                 <Sliders />
                 <Newslider_prob/>
-               
-                <Capacitation /> 
-               
-              
+                <Capacitation />               
            
             </div>
         )

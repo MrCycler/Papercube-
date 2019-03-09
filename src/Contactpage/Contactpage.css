@@ -18,7 +18,6 @@
   color: black;
   font-size: 15px;
   text-align: justify;
-
 }
 
 .contactbutton{
@@ -37,24 +36,17 @@
   height: 30px;
 }
 
-
-
-.mensajecss{
-    height: 40px;
+.contactmap
+{
+  width:100%;    
+  height:500px;
 }
-.imagearea{
-  
-    height: 300px;
-
-  }
 
 
-  .CheckText{
-    color: #0069D9;
-    font-weight:  bold;
-  }
-
-  .TooltipText{
-    text-decoration: underline;
-  }
+@media only screen and (max-width: 750px){
+  .contactmap
+      {
+        height:300px;
+      }
+}
   

@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { Button, Form, FormGroup, Label, Input} from 'reactstrap';
 import { Container, Row, Col } from 'reactstrap';
 
-import './Contactpage.css'
+import './Teampage.css'
 
 
-class Contactpage extends Component {
+class Teampage extends Component {
     constructor(){
         super();
         this.state = {
@@ -30,23 +30,20 @@ class Contactpage extends Component {
 
     render() {
       return (
-        <div className="contactarea">
-        <img className="contactsupimage"src="https://papercubehome.files.wordpress.com/2019/03/contact.png"></img>
+        <div className="teampagearea">
+        
         <Container>
           <Row className="contacttitletext"> 
       
-            <Col xs={this.state.numerotamaño}>
-              <p>Contáctanos:</p>
+            <Col xs="12">
+              <p>Soluciones tecnologícas diversas para un mundo cada vez más conectado</p>
             </Col>
          
           </Row>
 
           <Row className="contacttext"> 
             
-            <Col xs="12">
-              <p>Papercube le ofrece a su empresa o emprendimiento, un análisis ingenieril de sus procesos para brindarle una solución factible que incorpore tecnologías de vanguardia en hardware, software y análisis de datos. Contacte con nosotros y conozca la gama de soluciones que tenemos para ofrecerle.</p>
-            </Col>
-            
+
             <Col xs={this.state.numerotamaño}>
 
               <Form>
@@ -108,4 +105,4 @@ class Contactpage extends Component {
     }
   }
   
-  export default Contactpage;
+  export default Teampage;
