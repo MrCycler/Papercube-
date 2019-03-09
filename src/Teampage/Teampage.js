@@ -45,54 +45,27 @@ class Teampage extends Component {
             
 
             <Col xs={this.state.numerotamaño}>
-
-              <Form>
-                
-              <FormGroup>
-                <Label for="Contactname">Nombres:</Label>
-                <Input className="contactcamps" type="name" name="nombre" id="Contactname" placeholder="" />
-              </FormGroup>
-
-              <FormGroup>
-                <Label for="Contactlastname">Apellidos:</Label>
-                <Input className="contactcamps" type="name" name="apellido" id="Contactlastname" placeholder="" />
-              </FormGroup>
-
-              <FormGroup>
-                <Label for="Contactemail">Correo electrónico:</Label>
-                <Input className="contactcamps" type="email" name="email" id="Contactemail" placeholder="" />
-              </FormGroup>
-              
-              <FormGroup>
-                <Label for="Contactnumber">Teléfono:</Label>
-                <Input className="contactcamps" type="name" name="telefono" id="Contactnumber" placeholder="" />
-              </FormGroup>
-
-              <FormGroup>
-                <Label for="Contactreqtitle">Asunto:</Label>
-                <Input className="contactcamps" type="name" name="asunto" id="Contactreqtitle" placeholder="" />
-              </FormGroup>
-
-              <FormGroup>
-                <Label for="Contactreq">Mensaje:</Label>
-                <Input className="contacttextarea" type="textarea" name="mensaje" id="Contactreq" placeholder="" />
-              </FormGroup>
-              
-              <Button color="primary" className="contactbutton">Enviar</Button>
-              <p></p>
-
-              </Form>
-
+        
+                <img className="teampagemainimg"
+                alt="" 
+                src="https://www.colcircuitos.com/wp-content/uploads/2017/08/dise%C3%B1oele-03.png"> 
+                </img>
             </Col>
             
             <Col xs={this.state.numerotamaño}>
-
-            <iframe
-                className="contactmap"
-                frameborder="0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBGRxueWqb4u88-O7Z7aDFvxQ0wLe30N-4&q=PUCP" allowfullscreen>
-            </iframe>
-             
+            <p>Mision:</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </Col>
+            <Col xs={this.state.numerotamaño}>
+            <p>Vision:</p>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+            </Col>
+            <Col xs={this.state.numerotamaño}>
+                <img className="teampagemainimg"
+                alt="" 
+                src="https://www.colcircuitos.com/wp-content/uploads/2017/08/dise%C3%B1oele-03.png"> 
+                </img>
             </Col>
           </Row>
       
