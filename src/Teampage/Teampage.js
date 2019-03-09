@@ -68,9 +68,72 @@ class Teampage extends Component {
                 </img>
             </Col>
           </Row>
-      
+            <Row>
+            <Col xs="4">
+                <img className="teampagemainimg"
+                alt="" 
+                src="https://www.colcircuitos.com/wp-content/uploads/2017/08/dise%C3%B1oele-03.png"> 
+                </img>
 
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+            </Col>
+            <Col xs="4">
+                <img className="teampagemainimg"
+                alt="" 
+                src="https://www.colcircuitos.com/wp-content/uploads/2017/08/dise%C3%B1oele-03.png"> 
+                </img>
+
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+            </Col>
+            <Col xs="4">
+                <img className="teampagemainimg"
+                alt="" 
+                src="https://www.colcircuitos.com/wp-content/uploads/2017/08/dise%C3%B1oele-03.png"> 
+                </img>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            </Col>
+            </Row>
+
+            <Row>
+                <Col xs='4' className="letrasmainphotos">
+                <p></p>
+                <img alt=""  src="https://lugachhome.files.wordpress.com/2019/02/blackie.jpeg" 
+               
+               className="teamretraits">
+                </img>
+                <p>Hugo</p>
+               
+                </Col>
+
+                <Col xs='4' className="letrasmainphotos">
+                <p></p>
+                <img alt="" src="https://lugachhome.files.wordpress.com/2019/02/sachi.jpeg" 
+               
+               className="teamretraits">
+                </img>
+                <p>Paco</p>
+                
+                </Col>
+
+                <Col xs='4'className="letrasmainphotos">
+                <p></p>
+                <img alt=""  src="https://lugachhome.files.wordpress.com/2019/02/koko.jpg" 
+                 
+                className="teamretraits">
+                </img>
+                <p>Luis</p>
+                
+                </Col>
+
+                </Row>
        </Container>
+
+
+
+
+
 
         </div>
         
