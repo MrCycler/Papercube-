@@ -20,6 +20,8 @@ class Teampage extends Component {
         this.state = {
             numerotamaño :[], 
             numerotamaño2:[],
+            numerotamaño3:[],
+            numerotamaño4:[],
             modal: false, //for modal
             modalmember:0, //for modal
             membername:[],
@@ -33,12 +35,16 @@ class Teampage extends Component {
     }
 
     resize() {
-        if(window.innerWidth<800){
-          this.setState({numerotamaño: 12 ,numerotamaño2:12});
+        if(window.innerWidth<590){
+          this.setState({numerotamaño: 12 ,numerotamaño2:12,numerotamaño3:1,numerotamaño4:12});
         }
         else
         {
-            this.setState({numerotamaño: 6,numerotamaño2:4});
+            this.setState({numerotamaño: 6,numerotamaño2:4,numerotamaño3:0,numerotamaño4:4});
+            if(window.innerWidth<990){
+                this.setState({numerotamaño: 12 ,numerotamaño2:6,numerotamaño3:1,numerotamaño4:6});
+            }
+            
         }
       }
 
@@ -55,7 +61,7 @@ class Teampage extends Component {
  
             return (
 
-                <Col xs='4' className="letrasmainphotos" onClick={this.toggle.bind(this,miembro[0])}>
+                <Col xs={this.state.numerotamaño4} className="letrasmainphotos" onClick={this.toggle.bind(this,miembro[0])}>
 
                     <img alt=""  src={miembro[3]} 
                     className="teamretraits">
@@ -68,18 +74,27 @@ class Teampage extends Component {
             );
         })
 
+      let conditionaldiv = <p></p>;
+        if(this.state.numerotamaño3==1)
+        {
+           conditionaldiv =  <Col xs="3"></Col>;
+        }
+        else{
+            conditionaldiv = <p></p>;
+        }
+
 
       return (
         <div className="teampagearea">
         
         <Container>
-          <Row className="contacttitletext"> 
+          <Row className="teamtitletext"> 
             <Col xs="12">
               <p>Soluciones tecnologícas diversas para un mundo cada vez más conectado</p>
             </Col>
           </Row>
 
-          <Row className="contacttext"> 
+          <Row className="teamtext"> 
             <Col xs={this.state.numerotamaño} className="teamvisiondiv">
                 <img className="teampagemainimg"
                 alt="" 
@@ -96,7 +111,7 @@ class Teampage extends Component {
             <p className="teammainletters">Visión:</p>
             <p>PaperCube busca ser una empresa líder en el mercado de consultoría tecnológica, que sea aliado estratégico y soporte tecnológico de sus clientes. Asimismo, buscamos ser referentes en el desarrollo de soluciones innovadoras que nos permitan compartir nuestro conocimiento con nuestros clientes y con la comunidad. </p>
             </Col>
-
+            
             <Col xs={this.state.numerotamaño} className="teammissiondiv">
                 <img className="teampagemainimg"
                 alt="" 
@@ -116,6 +131,7 @@ class Teampage extends Component {
                     <p className="teamcharacterletters">Nuestro equipo cuenta con profesionales de diversas ramas de ingeniería que le garantizan una solución integral.</p>
                 </Col>
 
+             
                 <Col xs={this.state.numerotamaño2}>
                     <img className="teampagemainimg"
                     alt="" 
@@ -124,19 +140,19 @@ class Teampage extends Component {
                     <p className="teamcharactermainletters">Trabajo en equipo</p>
                     <p className="teamcharacterletters">Nuestra calidad de trabajo, cooperación y cohesión nos permiten ofrecerle una solución óptima en el tiempo adecuado.</p>
                 </Col>
-
+                {conditionaldiv}
                 <Col xs={this.state.numerotamaño2}>
                     <img className="teampagemainimg"
                     alt="" 
                     src="https://www.colcircuitos.com/wp-content/uploads/2017/08/dise%C3%B1oele-03.png"> 
                     </img>
                     <p className="teamcharactermainletters">Tecnología</p>
-                    <p className="teamcharacterletters">Buscamos incorporar la tecnología adecuada a la solución que usted requiere. Continuamente nos capacitamos para ofrecerle lo mejor</p>
+                    <p className="teamcharacterletters">Buscamos incorporar la tecnología adecuada a la solución que usted requiere. Continuamente nos capacitamos para ofrecerle lo mejor.</p>
                 </Col>
-
+                {conditionaldiv}
             </Row>
             
-            <Row className="contacttitletext"> 
+            <Row className="teamtitletext"> 
             <Col xs="12">
               <p>Nuestro equipo:</p>
             </Col>

@@ -54,3 +54,28 @@
     text-align: center;
     margin-top: 10px;
 }
+
+.teamtitletext{
+    color: #004D8F;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top:10px;
+  }
+  
+  .teamtext{
+    color: black;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+  @media only screen and (max-width: 850px){
+    .teampagearea{
+      margin-top:55px;
+    }
+  }
+
+  @media only screen and (max-width: 500px){
+    .teamtitletext{
+      text-align: center;
+    }
+  }
