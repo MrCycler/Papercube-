@@ -5,12 +5,13 @@
     }
 
 .teampagemainimg{
-    height:300px;
+    height:200px;
     display: flex;
     margin-left: auto;
     margin-right: auto;
-    width:350px;
-    margin-bottom: 20px;
+    width:250px;
+    margin-bottom: 40px;
+    margin-top:30px;
 }
 
 .teamretraits{
@@ -20,4 +21,36 @@
     display: flex;
     margin-left: auto;
     margin-right: auto;
+}
+
+.teammainletters{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top:20px;
+    
+}
+
+.teamvisiondiv{
+    background-color: #F0F0F0;
+    }
+
+.teammissiondiv{
+    background-color: #c2e6ef;
+    }
+
+.teamcharactermainletters{
+    font-weight: bold;
+    font-size: 20px;
+    text-align: center;
+    margin-top:10px;
+}
+
+.teamcharacterletters{
+    text-align: center;
+}
+
+.teamportraitletters{
+    font-weight: bold;
+    text-align: center;
+    margin-top: 10px;
 }
