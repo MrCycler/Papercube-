@@ -1,0 +1,53 @@
+.servicespagearea{   
+    background-color:white;
+    margin-bottom: 20px;
+    margin-top: 45px;
+    }
+
+.servicestitletext{
+    color: #004D8F;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top:10px;
+}
+
+.servicesvisiondiv{
+    background-color: #F0F0F0;    
+}
+
+.servicestext{
+    color: black;
+    font-size: 15px;
+    text-align: justify;
+  }
+
+.servicesmainletters{
+    font-weight: bold;
+    font-size: 20px;
+    margin-top:20px;  
+}
+
+
+.servicesvideos{
+    width:100%;
+    height:315px;
+  }
+
+
+@media only screen and (max-width: 850px){
+    .servicespagearea{
+        margin-top:55px;
+    }
+    }
+
+@media only screen and (max-width: 500px){
+    .servicestitletext{
+        text-align: center;
+    }
+    }
+
+@media only screen and (max-width: 800px){
+    .servicesvideos{
+        height:220px;
+    }
+}

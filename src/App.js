@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
 import Home from './Home/Home';
 import Navbar from './Layouts/Navbar/Navbar';
-import News from './News/News';
+import Projectspage from './Projectspage/Projectspage';
+import Servicespage from './Servicespage/Servicespage';
 import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 import Footers from './Layouts/Footers/Footers';
 import Workshops from './Workshops/Workshops';
@@ -47,7 +48,8 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/team" component={Teampage}/>   
-            <Route path="/projecss" component={News}/>   
+            <Route path="/projects" component={Projectspage}/>  
+            <Route path="/services" component={Servicespage}/>   
             <Route  path="/communis" component={Workshops}/>   
             <Route  path="/contact" component={Contactpage}/>  
             <Route  component={Page404}/>  
