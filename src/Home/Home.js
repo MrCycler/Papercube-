@@ -27,6 +27,7 @@ class Home extends Component{
         .then(res => {
             this.setState({
                 video: res
+
             })
         })
     }
@@ -42,6 +43,7 @@ class Home extends Component{
       }
 
     render() {
+        console.log(this.state.video);
 
         let videolink = this.state.video.map((videox,index) => {
             return videox.acf.video_url;
@@ -49,7 +51,7 @@ class Home extends Component{
 
         return (
            <div>
-               
+              
                 <Sliders />
                 <Newslider_prob/>
                 <Capacitation />               

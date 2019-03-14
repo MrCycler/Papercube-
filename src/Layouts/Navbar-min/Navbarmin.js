@@ -59,44 +59,29 @@ class Navbarmin extends Component{
             <div id="navbar" className="navbar-area">
             <Row>
               
-              <Col  xs="7">
-            <Navbar color="black" dark>
-          <NavbarToggler onClick={this.toggleNavbar} className="navbar_compresed"/>
+              <Col  xs="6">
+            <Navbar color="faded" light>
+          <NavbarToggler onClick={this.toggleNavbar}/>
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
-            
-              <NavItem>
-                <NavLink href=""><Link to="/" className="navbar__item">INICIO</Link></NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink href=""><Link to="/team" className="navbar__item">EQUIPO</Link></NavLink>
-              </NavItem>
-
-              <NavItem>
-                <NavLink href=""><Link to="/noticias" className="navbar__item">NOTICIAS</Link></NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href=""> <Link to="/academy" className="navbar__item">INNOVADEX ACADEMY</Link></NavLink>
-              </NavItem>
-             
-              <NavItem>
-                <NavLink href=""><Link to="/intsystem" className="navbar__item">REGISTRATE </Link></NavLink>
-              </NavItem>
-            </Nav>
-            
+              <Link to="/" className="navbar__item">INICIO</Link>
+              <Link to="/team" className="navbar__item">EQUIPO</Link>
+              <Link to="/projects" className="navbar__item">PROYECTOS</Link>
+              <Link to="/services" className="navbar__item">SERVICIOS</Link>
+              <Link to="/community" className="navbar__item">COMUNIDAD</Link>
+              <Link to="/contact" className="navbar__item">CONTACTO</Link>
+            </Nav>  
           </Collapse>
           
           </Navbar>   
           </Col>
-          <Col xs="3">
-          <p></p>
-          <Link to="/">
-                    <img class="navbar__image" 
-                    src="https://papercubehome.files.wordpress.com/2019/02/modo-alternativo.png"/>
-                    </Link>
-              <p></p>
-              </Col>
+
+            <Col xs="6">
+              <Link to="/">
+                <img className="navbar__imagecompresed" 
+                src="https://papercubehome.files.wordpress.com/2019/02/modo-alternativo.png"/>
+              </Link>
+            </Col>
           </Row>           
             </div>
         )

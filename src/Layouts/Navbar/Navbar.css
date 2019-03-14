@@ -55,6 +55,15 @@
     padding-left: 1rem;
 }
 
+.navbar__imagecompresed{
+    height: 2.5rem;
+    width: auto;
+    align-self: flex-start;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    margin-top:8px;
+}
+
 .navbar_compresed{
     color:#001845;
     border:1px solid #001845;
