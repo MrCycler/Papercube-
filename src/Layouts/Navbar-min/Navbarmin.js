@@ -64,12 +64,12 @@ class Navbarmin extends Component{
           <NavbarToggler onClick={this.toggleNavbar}/>
           <Collapse isOpen={!this.state.collapsed} navbar>
             <Nav navbar>
-              <Link to="/" className="navbar__item">INICIO</Link>
-              <Link to="/team" className="navbar__item">EQUIPO</Link>
-              <Link to="/projects" className="navbar__item">PROYECTOS</Link>
-              <Link to="/services" className="navbar__item">SERVICIOS</Link>
-              <Link to="/community" className="navbar__item">COMUNIDAD</Link>
-              <Link to="/contact" className="navbar__item">CONTACTO</Link>
+              <Link to="/" onClick={this.toggleNavbar} className="navbar__item">INICIO</Link>
+              <Link to="/team" onClick={this.toggleNavbar} className="navbar__item">EQUIPO</Link>
+              <Link to="/projects" onClick={this.toggleNavbar} className="navbar__item">PROYECTOS</Link>
+              <Link to="/services" onClick={this.toggleNavbar} className="navbar__item">SERVICIOS</Link>
+              <Link to="/community" onClick={this.toggleNavbar} className="navbar__item">COMUNIDAD</Link>
+              <Link to="/contact" onClick={this.toggleNavbar} className="navbar__item">CONTACTO</Link>
             </Nav>  
           </Collapse>
           
