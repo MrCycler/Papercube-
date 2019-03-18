@@ -1,10 +1,9 @@
 import React, { Component } from 'react';
-
 import Capacitation from './Capacitation/Capacitation';
-
-import{Col,Row,Container} from 'reactstrap';
 import Servicesslider from './Servicesslider/Servicesslider'
 import Sliders from './Sliders/Sliders';
+import Alliance from './Alliance/Alliance';
+
 import './Home.css'
 
 class Home extends Component{
@@ -50,12 +49,13 @@ class Home extends Component{
          })
 
         return (
-           <div>
-              
+           <div> 
                 <Sliders />
                 <Servicesslider/>
-                <Capacitation />               
-           
+                <Capacitation />  
+
+                <Alliance />               
+
             </div>
         )
     }

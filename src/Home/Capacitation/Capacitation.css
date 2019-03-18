@@ -6,17 +6,24 @@
     align-items: center;
 }
 
-.capacitation__title{
-    align-self: flex-start;
-    font-size: 1.5rem;
+.capacitationtitletext{
+    color: #004D8F;
+    font-size: 25px;
     font-weight: bold;
-    color: #001845;
-    font-family: Verdana;
+    margin-top:10px;
 }
 
 .capacitation__item__image{
     max-width: 100%;
 }
+
+.capacitationitemtitle{
+    font-weight: bold;
+    color: black;
+    font-size: 18px;
+    text-align: center;
+}
+
 
 
 
@@ -49,10 +56,7 @@
     
 }
 
-.capacitation__item__title{
-    font-weight: bold;
-    color: #003D71;
-}
+
 
 .capacitation__item__text{
     border-top: 1px solid rgba(0,0,0,.2);

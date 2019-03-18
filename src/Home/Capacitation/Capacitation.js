@@ -4,11 +4,18 @@ import { Container, Row, Col } from 'reactstrap';
 import { Link } from '../../../node_modules/react-router-dom';
 import './Capacitation.css'
 
+const papercubeprojects = [
+
+    [0,'Coche Bluetooth GPS',"http://innovadex.adexperu.org.pe/back/wp-content/uploads/2018/07/IMG_20180710_093107-300x224.jpg",'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book'],
+    [1,'Puerta de seguridad',"http://innovadex.adexperu.org.pe/back/wp-content/uploads/2018/07/IMG_20180710_093107-300x224.jpg",'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book'],
+    [2,'Semáforo LED',"http://innovadex.adexperu.org.pe/back/wp-content/uploads/2018/07/IMG_20180710_093107-300x224.jpg",'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book'],
+
+]
+
 class Capacitation extends Component {
     constructor(){
         super();
         this.state = {
-            capacitations : [],
             numerorender1:[],
             numerorender2:[],
         }
@@ -16,15 +23,8 @@ class Capacitation extends Component {
 
     componentDidMount() {
         window.addEventListener("resize", this.resize.bind(this));
-           this.resize();
-        let dataUrl = "http://innovadex.adexperu.org.pe/back/wp-json/wp/v2/talleres?per_page=3&orderby=date"
-        fetch(dataUrl)
-        .then(res => res.json())
-        .then(res => {
-            this.setState({
-                capacitations: res
-            })
-        })
+        this.resize();
+       
     }
 
     resize() {
@@ -40,56 +40,40 @@ class Capacitation extends Component {
         }
       }
     render () {
-        let capacitations = this.state.capacitations.map((capacitation,index) => {
-            let hasImage = capacitation.acf.imagen;
-
-            let image;
-            if ( hasImage !== false){
-                
-                image = <img width="100%"  src={capacitation.acf.imagen_card.sizes.medium}/>;
-            }
-
-
-            let anho = (capacitation.acf.fecha).substring(0,4);
-            let mes = (capacitation.acf.fecha).substring(4,6);
-            let dia = (capacitation.acf.fecha).substring(6,8);
-            let id = capacitation.id;
-
+        let divisiones = papercubeprojects.map((project) => {
+           
             return (
            <Col xs={this.state.numerorender1}  >
            
                 <Row >
                 <Col xs={this.state.numerorender2}>
-               <p></p>
-               {image}
-          
+                    <img width="100%"  src={project[2]}/>
                 </Col>
                 <Col xs={this.state.numerorender2} >
-                    
-                    <p className="capacitation__item__title" >
-                    <Link to={"/academy/"+id} >{capacitation.title.rendered}</Link>
-                    </p>
-                    <p>Fecha : {dia}/{mes}/{anho}</p>
-                    
-              
+                    <a href="/" >
+                        <p className="capacitationitemtitle" > {project[1]}</p>
+                    </a>
                 </Col>
                </Row>
               
-                
             </Col>
         
             );
         })
 
         return (
-            <div className="capacitation" >
-                <h2 className="capacitation__title">PARTICIPA DE NUESTROS TALLERES</h2>
-                <div >
+            <Container >
+                <Row className="capacitationtitletext"> 
+                    <Col xs="12">
+                        <p>Convertimos la ingeniería en valor agregado a su negocio:</p>
+                    </Col>
+                </Row>
+             
                     <Row>
-                    {capacitations}
+                    {divisiones}
                     </Row>
-                </div>
-            </div>
+               
+            </Container>
         )
     }
 

@@ -72,6 +72,7 @@ class Servicesslider extends Component {
                   </CardBody>
                   </Card>
                 </Col> 
+                
               </Row>
             </Container>
           );
