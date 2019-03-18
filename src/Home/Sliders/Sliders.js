@@ -9,6 +9,11 @@ import {
 
 import { Container, Row, Col } from 'reactstrap';
 //import './Sliders.css';
+const papercubeimages = [
+  [0,'http://innovadex.adexperu.org.pe/back/wp-content/uploads/2018/07/A.jpg'],
+  [1,'http://innovadex.adexperu.org.pe/back/wp-content/uploads/2018/07/PHOTO-2018-07-19-15-29-31.jpg'],
+  [2,'http://innovadex.adexperu.org.pe/back/wp-content/uploads/2018/07/IMG_1058.jpg'],
+]
 
 class Sliders extends Component {
   constructor(props) {
@@ -70,16 +75,16 @@ class Sliders extends Component {
       return (
       );})*/
 
-    let slides = this.state.sliderimages.map((item) => {
+    let slides = papercubeimages.map((image) => {
       return (
         <CarouselItem
           className="custom-tag"
           tag="div"
-          key={item.id}
+          key={image[0]}
           onExiting={this.onExiting}
           onExited={this.onExited}
         >
-        <img src={item.acf.imagen.url} alt={this.state.altText} width="100%" height="100%"/>
+        <img src={image[1]} alt='' width="100%" height="100%"/>
           <CarouselCaption className="text-danger" captionText="" captionHeader="" />
         </CarouselItem>
       );
