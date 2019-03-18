@@ -62,16 +62,16 @@ class Navbarmin extends Component{
               <Col  xs="6">
             <Navbar color="faded" light>
           <NavbarToggler onClick={this.toggleNavbar}/>
-          <Collapse isOpen={!this.state.collapsed} navbar>
-            <Nav navbar>
-              <Link to="/" onClick={this.toggleNavbar} className="navbar__item">INICIO</Link>
-              <Link to="/team" onClick={this.toggleNavbar} className="navbar__item">EQUIPO</Link>
-              <Link to="/projects" onClick={this.toggleNavbar} className="navbar__item">PROYECTOS</Link>
-              <Link to="/services" onClick={this.toggleNavbar} className="navbar__item">SERVICIOS</Link>
-              <Link to="/community" onClick={this.toggleNavbar} className="navbar__item">COMUNIDAD</Link>
-              <Link to="/contact" onClick={this.toggleNavbar} className="navbar__item">CONTACTO</Link>
-            </Nav>  
-          </Collapse>
+            <Collapse isOpen={!this.state.collapsed} navbar>
+                <Nav navbar>
+                  <Link to="/" onClick={this.toggleNavbar} className="navbar__item">INICIO</Link>
+                  <Link to="/team" onClick={this.toggleNavbar} className="navbar__item">EQUIPO</Link>
+                  <Link to="/projects" onClick={this.toggleNavbar} className="navbar__item">PROYECTOS</Link>
+                  <Link to="/services" onClick={this.toggleNavbar} className="navbar__item">SERVICIOS</Link>
+                  <Link to="/community" onClick={this.toggleNavbar} className="navbar__item">COMUNIDAD</Link>
+                  <Link to="/contact" onClick={this.toggleNavbar} className="navbar__item">CONTACTO</Link>
+                </Nav>  
+            </Collapse>
           
           </Navbar>   
           </Col>
