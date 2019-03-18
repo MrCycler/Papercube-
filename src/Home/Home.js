@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 import Capacitation from './Capacitation/Capacitation';
 
 import{Col,Row,Container} from 'reactstrap';
-import Newslider_prob from './Newslider/Newslider_prob';
+import Servicesslider from './Servicesslider/Servicesslider'
 import Sliders from './Sliders/Sliders';
 import './Home.css'
 
@@ -53,7 +53,7 @@ class Home extends Component{
            <div>
               
                 <Sliders />
-                <Newslider_prob/>
+                <Servicesslider/>
                 <Capacitation />               
            
             </div>

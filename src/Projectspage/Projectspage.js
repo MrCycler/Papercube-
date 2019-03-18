@@ -20,6 +20,7 @@ class Projectspage extends Component {
             numerotamaño :[], 
    
         }
+
         }
 
     componentDidMount() {

@@ -1,3 +1,37 @@
+.serviceslidertitletext{
+  color: #004D8F;
+  font-size: 25px;
+  font-weight: bold;
+  margin-top:10px;
+}
+
+.servicesslider{
+  margin-bottom: 30px;
+}
+
+@media only screen and (max-width: 500px){
+  .serviceslidertitletext{
+      text-align: center;
+  }
+  }
+
+  .letrascarta{
+    color: white;
+    font-size: 14px;
+  }
+.servicescards{
+   height:"450px"
+}
+
+.servicesbutton
+{
+  background-color: white;
+}
+
+
+
+
+
 
 .centercard{
   display: flex;
@@ -15,10 +49,7 @@
   height: 130px; 
 }
 
-.letrascarta{
-  color: white;
-  font-size: 14px;
-}
+
 
 .separaciony {
   background-color:#003D71;
