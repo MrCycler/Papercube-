@@ -45,8 +45,8 @@ class Footers extends Component {
            <Col xs={this.state.numerotamaño}>
             <p className="footertitletext">CONTACTE CON NOSOTROS:</p>
             <p className="verticalalign"> <MaterialIcon icon="room" color='white'/>&nbsp; Av. Universitaria 1801, San Miguel, Lima - Perú</p>
-            <p className="verticalalign"> <MaterialIcon icon="local_phone" color='white'/>&nbsp; Telefóno: &nbsp; <a href="tel:991471604">991471604</a></p>
-            <p className="verticalalign"><MaterialIcon icon="mail" color='white'/>  &nbsp; Correo electrónico:&nbsp;  <a href="mailto:soluciones@papercube.pe"> soluciones@papercube.pe</a></p>
+            <p className="verticalalign"> <MaterialIcon icon="local_phone" color='white'/>&nbsp; Telefóno: &nbsp; <a className="linkinfo" href="tel:991471604">991471604</a></p>
+            <p className="verticalalign"><MaterialIcon icon="mail" color='white'/>  &nbsp; Correo electrónico:&nbsp;  <a className="linkinfo" href="mailto:soluciones@papercube.pe"> soluciones@papercube.pe</a></p>
            </Col>
 
            <Col xs={this.state.numerotamaño2}>

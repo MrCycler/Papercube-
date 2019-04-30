@@ -72,7 +72,11 @@
     color: white;
 }
 
-a:hover,a:active,a:link,a:visited { 
+.linkinfo{
+    color: white;
+}
+
+.linkinfo:hover,.linkinfo:active,.linkinfo:link,.linkinfo:visited { 
     color: white;
 }
 
