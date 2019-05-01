@@ -93,9 +93,9 @@ class Contactpage extends Component {
             <iframe
                 className="contactmap"
                 frameborder="0"
-                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBGRxueWqb4u88-O7Z7aDFvxQ0wLe30N-4&q=PUCP" allowfullscreen>
+                src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBGRxueWqb4u88-O7Z7aDFvxQ0wLe30N-4&q=Pedro%20Ruiz%20Gallo%20409" allowfullscreen>
             </iframe>
-             
+            
             </Col>
           </Row>
       
