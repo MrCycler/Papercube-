@@ -5,12 +5,12 @@ import './Teampage.css'
 
 const teampapercube = [
 
-    [0,'Hugo Deudor','CEO',"https://lugachhome.files.wordpress.com/2019/02/koko.jpg",'Es un tipazo',['cafe','te','agua']],
-    [1,'Joel Tapia','CFO',"https://lugachhome.files.wordpress.com/2019/02/koko.jpg",'Es un tipazo',['cafe','te','agua']],
-    [2,'Jose Mallma','COO',"https://lugachhome.files.wordpress.com/2019/02/koko.jpg",'Es un tipazo',['cafe','te','agua']],
-    [3,'Pedro Mendoza','CMO',"https://lugachhome.files.wordpress.com/2019/02/koko.jpg",'Es un tipazo',['cafe','te','agua']],
-    [4,'Juan Mendoza','CTO',"https://lugachhome.files.wordpress.com/2019/02/koko.jpg",'Es un tipazo',['cafe','te','agua']],
-    [5,'Anthony Carrera','SCM',"https://lugachhome.files.wordpress.com/2019/02/koko.jpg",'Es un tipazo',['cafe','te','agua']],
+    [0,'Hugo Deudor','CEO',"https://papercubehome.files.wordpress.com/2019/05/hugo.jpg",'Es un tipazo',['cafe','te','agua']],
+    [1,'Joel Tapia','CFO',"https://papercubehome.files.wordpress.com/2019/05/joel.jpg",'Es un tipazo',['cafe','te','agua']],
+    [2,'Jose Mallma','COO',"https://papercubehome.files.wordpress.com/2019/05/jose.jpg",'Es un tipazo',['cafe','te','agua']],
+    [3,'Pedro Mendoza','CMO',"https://papercubehome.files.wordpress.com/2019/05/pedro.jpg",'Es un tipazo',['cafe','te','agua']],
+    [4,'Juan Mendoza','CTO',"https://papercubehome.files.wordpress.com/2019/05/juan.jpg",'Es un tipazo',['cafe','te','agua']],
+    [5,'Anthony Carrera','SCM',"https://papercubehome.files.wordpress.com/2019/05/anthony.jpg",'Es un tipazo',['cafe','te','agua']],
 
 ]
 
