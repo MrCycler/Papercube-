@@ -154,7 +154,9 @@ class Teampage extends Component {
             
             <Row className="teamtitletext"> 
             <Col xs="12">
+
               <p>Nuestro equipo:</p>
+              
             </Col>
             </Row>
 
