@@ -48,9 +48,9 @@ class App extends Component {
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/team" component={Teampage}/>   
-            <Route path="/projects" component={Projectspage}/>  
-            <Route path="/services" component={Servicespage}/>   
-            <Route  path="/communis" component={Workshops}/>   
+            <Route path="/projects" component={Page404}/>  
+            <Route path="/services" component={Page404}/>   
+            <Route  path="/community" component={Page404}/>  
             <Route  path="/contact" component={Contactpage}/>  
             <Route  component={Page404}/>  
           </Switch>
